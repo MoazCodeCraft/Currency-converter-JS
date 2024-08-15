@@ -4,6 +4,11 @@ let btn=document.querySelector("button");
 let fromCurr=document.querySelector(".from select");
 let toCurr=document.querySelector(".to select");
 let msg=document.querySelector(".msg");
+let refresh=document.querySelector("#refresh");
+
+refresh.addEventListener("click",()=>{
+    location.reload();
+})
 for(let select of dropdown){
     for(currCode in countryList){
         let newOption=document.createElement("option");
